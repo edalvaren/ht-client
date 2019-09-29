@@ -1,0 +1,21 @@
+
+version: '3'
+
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ealvaren/ht-vue:latest
+    container_name: htclient_vue
+    expose:
+      - "80"
+    ports:
+      - "8080:80"
+    volumes:
+        - ./:/app
+    restart: unless-stopped
+
+networks:
+  app-network:
+       driver: bridge
