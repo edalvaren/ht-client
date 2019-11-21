@@ -1,11 +1,8 @@
 <template>
-    <b-card
-        footer-bg-variant="dark"
-        footer-text-variant="white"
-        footer="&copy 2019 Honduras Translation Services">
+        <div class="footer">
+       &copy 2019 Honduras Translation Services
+    </div>
 
-
-    </b-card>
 </template>
 
 <script>

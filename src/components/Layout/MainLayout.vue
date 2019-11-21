@@ -1,27 +1,25 @@
 <template>
 <div class="container">
 
-    <div>
-    <app-navbar> </app-navbar></div>
+    <app-navbar> </app-navbar>
     <main>
         <router-view/>
     </main>
+    <app-footer> </app-footer>
 </div>
 </template>
 
 <script>
     import AppNavbar from './AppNavbar';
-
+    import AppFooter from './AppFooter';
     export default {
         name: "MainLayout",
         components: {
-            AppNavbar
+            AppNavbar,
+            AppFooter
         }
     }
 </script>
-
-<style scoped lang="stylus">
-    .mainbody
-        font-family "Californian FB"
+<style scoped>
 
 </style>
